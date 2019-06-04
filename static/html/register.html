@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/enroll.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+    <header>
+        <main>
+            <div class="tab1">
+                <a href="/"><img src="../images/logo.1f42884.png.webp" width="160px" height="42px" alt=""></a>
+            </div>
+            <h2>账号注册</h2>
+            <form action="">
+                <div class="ip">
+                    <div class="ipt1">
+                        <label for="username" class="label1"></label>
+                        <input type="text" name="username" id="username" placeholder="请输入用户名" required>
+                    </div>
+                    <div class="ipt1">
+                        <label for="password" class="label1"></label>
+                        <input type="password" name="password" id="password" placeholder="请输入密码" required>
+                    </div>
+                    <div class="ipt1">
+                        <label for="password" class="label1"></label>
+                        <input type="password" name="repasswd" id="repasswd" required placeholder="请再次输入密码">
+                    </div>
+                    <p class="bt4">
+                        <a href="/login" class="bt3">用户已注册请登录</a>
+                    </p>
+                    <div class="bt1">
+                        <button class="bt2">注册 </button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <div class="footWrap">
+            <div id="foot">
+                <a href="#" id="fl">
+                    <img src="../images/mes.png" alt="" id="i1">
+                    <span id="p1">在线客服</span>
+                </a>
+                <a href="#" id="fr">
+                    <img src="../images/tel.8e75c45.png.webp" alt="" id="i2">
+                    <span id="p2"> 400-678-9688(24小时全国服务热线) </span>
+                </a>
+
+                <div id="copyright">
+                    COPYRIGHT ©2011-2018 广东步步高电子工业有限公司 版权所有 保留一切权利 | 隐私政策 | 法律声明 | 粤B2-20080267 | 粤ICP备05100288号
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            fetch('/register', {
+                    method: 'POST',
+                    body: new FormData(this)
+                        // // body: new URLSearchParams({ username, password, repasswd })
+                        // body: JSON.stringify({ username, password, repasswd }),
+                        // headers: {
+                        //   // 'Content-Type': 'application/json'
+                        //   'Content-Type': 'application/x-www-form-urlencoded'
+                        // }
+                })
+                .then(res => res.json())
+                .then(data => {
+                    alert(data.message);
+                    if (data.code == 200) {
+                        location = '/login';
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 头部 */
+
+header {
+    background-color: #333333;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 32px;
+}
+
+.header li {
+    float: left;
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.header li a {
+    color: #cccccc;
+}
+
+.header li a:hover {
+    color: #7e7e7e;
+    cursor: pointer;
+}
+
+.li1 {
+    float: left;
+    padding-left: 48px;
+}
+
+.li1 li {
+    margin-right: 41px;
+}
+
+.li2 {
+    float: right;
+    padding-right: 48px;
+}
+
+.li2 li:nth-child(1) {
+    margin-right: 42px;
+}
+
+.li2 li:nth-child(2) {
+    width: 45px;
+    background: url(../images/li2_03.jpg) right 11px no-repeat;
+}
+
+.li2 li:nth-child(3) {
+    margin-left: 18px;
+}
+
+
+/* 导航 */
+
+nav {
+    background: url(../images/ba1.jpg) left top no-repeat;
+    background-size: 100%;
+    height: 588px;
+    margin-bottom: 8px;
+}
+
+.nav {
+    width: 1423px;
+    height: 68px;
+}
+
+
+/* 隐藏部分 */
+
+.nav #li1 {
+    display: none;
+    width: 100%;
+    height: 306px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: #ccc;
+}
+
+.nav #li1 .li1-1 {
+    margin-top: 54px;
+    margin-left: 655px;
+}
+
+.nav #li1 div {
+    width: 68px;
+    height: 160px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.nav #li1 div:nth-child(1) {
+    z-index: 4;
+}
+
+.nav #li1 div:nth-child(2) {
+    z-index: 3;
+}
+
+.nav #li1 div:nth-child(3) {
+    z-index: 2;
+}
+
+.nav #li1 .li1-1:hover div:nth-child(1) {
+    transform: translateX(20px);
+}
+
+.nav #li1 .li1-1:hover div:nth-child(3) {
+    transform: translateX(-20px);
+}
+
+.nav #li1 .li1-1:hover div:nth-child(4) {
+    transform: translateX(-40px);
+}
+
+.nav #li1 div img {
+    width: 68px;
+    height: 160px;
+    border: 0;
+}
+
+.nav .iconfont {
+    font-size: 28px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.nav .iconfont:hover {
+    color: #415fff;
+}
+
+.nav li {
+    margin-top: 25px;
+    float: left;
+    margin-right: 58px;
+}
+
+.nav li a {
+    color: #fff;
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.nav li a:hover {
+    color: #415fff;
+}
+
+.nav1 {
+    margin-left: 112px;
+    margin-right: 70px;
+    float: left;
+    margin-top: 16px;
+}
+
+.nav2 {
+    margin-top: 27px;
+    float: left;
+    margin-left: 15px;
+}
+
+.nav2 img {
+    width: 17px;
+    height: 17px;
+    border: 0;
+}
+
+.nav3 {
+    margin-left: 322px;
+    margin-top: 119px;
+}
+
+.nav4 {
+    font-size: 34px;
+    line-height: 34px;
+    color: #fff;
+    margin-top: 72px;
+    font-weight: bolder;
+}
+
+.nav5 {
+    margin-top: 55px;
+    font-size: 15px;
+}
+
+.nav5 a {
+    padding-left: 12px;
+    background: url(../images/dayu_03.jpg) left center no-repeat;
+    color: #fff;
+}
+
+.nav5 a:hover {
+    background: url(../images/dayu1_03.jpg) left center no-repeat;
+    color: #415fff;
+}
+
+
+/* 广告栏 */
+
+.banner {
+    margin-bottom: 8px;
+    height: 620px;
+    width: 100%;
+}
+
+.banner1 {
+    margin-right: 9px;
+    overflow: hidden;
+    float: left;
+}
+
+.banner2 {
+    overflow: hidden;
+    float: left;
+}
+
+.banner1 img {
+    width: 707px;
+    height: 620px;
+}
+
+.banner1 img:hover {
+    transform: scale(1.1);
+    transition: 0.5s linear;
+}
+
+.banner2 img {
+    float: left;
+    width: 707px;
+    height: 620px;
+}
+
+.banner2 img:hover {
+    transform: scale(1.1);
+    transition: 0.5s linear;
+}
+
+.bann1 {
+    margin-bottom: 8px;
+    clear: both;
+}
+
+.bann1 .ba1 {
+    display: block;
+    width: 1424px;
+    height: 611px;
+    background: url(../images/bann1.jpg) center no-repeat;
+    background-size: 100%;
+}
+
+.bann1 .ba1 img {
+    margin-top: 326px;
+    margin-left: 320px;
+    margin-bottom: 55px;
+}
+
+.bann1 .ba2 {
+    padding-left: 12px;
+    margin-left: 320px;
+    background: url(../images/dayu2_03.jpg) left center no-repeat;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.bann1 .ba2:hover {
+    color: #415fff;
+    background: url(../images/dayu4_03.jpg) left center no-repeat;
+}
+
+.bann2 {
+    margin-bottom: 8px;
+}
+
+.bann2 .ba3 {
+    width: 1424px;
+    height: 611px;
+    background: url(../images/bann2.jpg) center no-repeat;
+    background-size: 100%;
+}
+
+.ba3-1 img {
+    margin-top: 216px;
+    margin-left: 320px;
+}
+
+.ba3-1 h2 {
+    margin-left: 320px;
+    font-size: 35px;
+    color: #fff;
+    margin-top: 74px;
+    line-height: 35px;
+}
+
+.ba3-1 p {
+    margin-left: 320px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.ba3-2 {
+    margin-left: 320px;
+    margin-top: 55px;
+}
+
+.ba3-2 a {
+    padding-left: 12px;
+    background: url(../images/www.vivo.com_07.jpg) left center no-repeat;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 44px;
+}
+
+.ba3-2 a:hover {
+    color: #415fff;
+    background: url(../images/dayu5_03.jpg) left center no-repeat;
+}
+
+.bann3 {
+    width: 100%;
+    height: 295px;
+}
+
+.lunbo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.lunbo ul {
+    width: 7200px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bann3 li {
+    float: left;
+}
+
+.bann3 img {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.bann3 .buttons {
+    position: absolute;
+    right: 45%;
+    bottom: 20px;
+    height: 20px;
+    z-index: 1;
+    line-height: 20px;
+}
+
+.bann3 .buttons .dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+
+.bann3 .active {
+    background-color: #fff;
+}
+
+
+/* 底部 */
+
+.footerwarp {
+    background-color: #f7f7f7;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 1200px;
+    height: 480px;
+}
+
+.footer1 {
+    padding-top: 80px;
+    height: 325px;
+    width: 1200px;
+    /* background-color: chartreuse; */
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.footer1 ul {
+    float: left;
+    margin-right: 117px;
+}
+
+.footer1 ul:nth-child(1) {
+    margin-left: 20px;
+}
+
+.footer1 ul li {
+    margin-bottom: 22px;
+    font-size: 12px;
+}
+
+.footer ul li a {
+    color: #666666;
+}
+
+.footer ul li a:hover {
+    color: #415fff;
+}
+
+.footer1 ul li:nth-child(1) {
+    margin-bottom: 43px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.footer1-1 {
+    float: right;
+}
+
+.footer1-1-1 {
+    margin-right: 76px;
+    margin-bottom: 66px;
+    font-size: 23px;
+    line-height: 23px;
+}
+
+.footer1-1-1 a {
+    background: url(../images/footer2.jpg) left center no-repeat;
+    padding-left: 36px;
+    color: #333333;
+}
+
+.footer1-1-1 a:hover {
+    background: url(../images/footer1.jpg) left center no-repeat;
+    color: #415fff;
+}
+
+.footer1-1 h2 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    color: #415fff;
+}
+
+.footer1-1 p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.footer1-1-2 {
+    margin-top: 62px;
+}
+
+.footer1-1-2 div {
+    float: left;
+    font-size: 12px;
+    color: #333333;
+}
+
+.footer1-1-2 a {
+    float: left;
+    width: 23px;
+    height: 18px;
+    margin-left: 17px;
+}
+
+.footer1-1-2 a:nth-of-type(1) {
+    background: url(../images/footer_07.jpg) center no-repeat;
+}
+
+.footer1-1-2 a:nth-of-type(2) {
+    background: url(../images/footer_09.jpg) center no-repeat;
+}
+
+.footer1-1-2 a:nth-of-type(3) {
+    background: url(../images/footer_11.jpg) center no-repeat;
+}
+
+.footer1-1-2 a:nth-of-type(1):hover {
+    background: url(../images/footer_03.jpg) center no-repeat;
+}
+
+.footer1-1-2 a:nth-of-type(2):hover {
+    background: url(../images/footer4_03.jpg) center no-repeat;
+}
+
+.footer1-1-2 a:nth-of-type(3):hover {
+    background: url(../images/footer5_03.jpg) center no-repeat;
+}
+
+.footer2-1 {
+    text-align: center;
+    line-height: 75px;
+    font-size: 12px;
+    float: left;
+    color: #666666;
+    margin-left: 174px;
+}
+
+.footer2 img:nth-of-type(1) {
+    margin-top: 27px;
+    width: 16px;
+    height: 18px;
+    margin-left: 18px;
+    float: left;
+}
+
+.footer2 img:nth-of-type(2) {
+    float: left;
+    margin: 31px 14px;
+}
+
+.footer2 img:nth-of-type(3) {
+    float: left;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+
+.footer2 span {
+    line-height: 75px;
+    float: left;
+    color: #666666;
+    font-size: 12px;
+}

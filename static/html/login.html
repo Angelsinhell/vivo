@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="banner">
+            <img src="../images/login.png" alt="">
+
+            <a href="/">
+                <div id="logo"></div>
+            </a>
+
+        </div>
+        <div class="tab">
+            <div class="tab1">
+                <a href="/"><img src="../images/logo.1f42884.png.webp" width="160px" height="42px" alt=""></a>
+            </div>
+            <h2>账号密码登录</h2>
+            <!-- <span id="log" class="log">帐号登录</span> -->
+            <form action="">
+                <div id="box1" class="box1">
+                    <!-- <span id="num">+86</span> -->
+                    <input type="text" placeholder="请输入vivo账号" id="ipt" name="username" required>
+                </div>
+                <div id="box2" class="box2">
+                    <input type="password" placeholder="请输入密码" id="ipt2" name='password' required>
+                    <!-- <span id="line"></span> -->
+                    <!-- <span id="word">获取验证码</span> -->
+                </div>
+                <div id="auto-login" class="auto-login">
+                    <span id="auto-login-check">
+                            <img id="checkImg" src="../images/check.png" 
+                            style="display:none" width="14" height="14" alt="">
+                        </span>
+                    <span id="word2">两周内自动登录</span>
+                </div>
+                <div class="login-button">
+                    <button id="btn1">登录</button>
+                </div>
+                <div class="register-button"><a href="/register">注册vivo帐号</a></div>
+            </form>
+
+            <script>
+                var check = document.getElementById('auto-login-check');
+                var checkImg = document.getElementById('checkImg');
+                var flag = true;
+                // console.log(check)
+                check.onclick = function() {
+                    if (flag) {
+                        checkImg.style.display = 'block';
+                    } else {
+                        checkImg.style.display = 'none';
+                    }
+                    flag = !flag;
+                }
+            </script>
+
+
+            <!-- <div class="word3">短信可能会有延时，请耐心等待，如果长时间未收到短信，请60秒后重新获取</div> -->
+            <div class="word3">网络可能会有延迟，请耐心等待，如果长时间未登录成功，请过一段时间重新加载本页</div>
+            <div class="forget-pwd">忘记密码？</div>
+
+            <div class="other-way" id="other-way">
+                <fieldset id="other">
+                    <legend align-self="center">其他方式登录</legend>
+                </fieldset>
+            </div>
+
+            <div class="icon-box" id="icon-box">
+                <div id="icon-item">
+                    <div id="img-qq"></div>
+                    <div id="img-weixin"></div>
+                    <div id="img-zfb"></div>
+                    <div id="img-weibo"></div>
+                    <div id="img-renren"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footWrap">
+        <div id="foot">
+            <a href="#" id="fl">
+                <img src="../images/mes.png" alt="" id="i1">
+                <span id="p1">在线客服</span>
+            </a>
+            <a href="#" id="fr">
+                <img src="../images/tel.8e75c45.png.webp" alt="" id="i2">
+                <span id="p2"> 400-678-9688(24小时全国服务热线) </span>
+            </a>
+
+            <div id="copyright">
+                COPYRIGHT ©2011-2018 广东步步高电子工业有限公司 版权所有 保留一切权利 | 隐私政策 | 法律声明 | 粤B2-20080267 | 粤ICP备05100288号
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/ajax.promise.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
